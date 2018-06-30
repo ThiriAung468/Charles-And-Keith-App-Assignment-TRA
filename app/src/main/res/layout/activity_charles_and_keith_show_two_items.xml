@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:theme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_drag_handle_black_light_24dp"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+                <TextView
+                    android:id="@+id/tv_title_of_shoe_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-thin"
+                    android:includeFontPadding="true"
+                    android:text="New  In"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_regular_3x" />
+                <ImageView
+                    android:id="@+id/iv_pagination_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pagination1"
+                    android:layout_below="@id/iv_setting"
+                    android:layout_alignLeft="@id/iv_setting"
+                    android:layout_marginTop="@dimen/margin_large"
+                    />
+                <ImageView
+                    android:id="@+id/iv_pagination_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pagination2"
+                    android:layout_below="@id/iv_setting"
+                    android:layout_toRightOf="@+id/iv_pagination_1"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginLeft="@dimen/margin_medium_3"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_sort_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:layout_marginTop="58dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:includeFontPadding="true"
+                    android:text="S o r t   B y"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/text_regular"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_number_of_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:fontFamily="sans-serif-thin"
+            android:includeFontPadding="true"
+            android:text="87  items"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_regular_2x" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_charles_and_keith_list_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_shoe_show_one"
+        android:layout_width="157dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/shoe"
+        />
+
+    <Button
+        android:id="@+id/btn_new_item"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+       android:layout_alignRight="@id/iv_shoe_show_one"
+        android:layout_alignTop="@id/iv_shoe_show_one"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/white"
+        android:clickable="false"
+        android:fontFamily="sans-serif-thin"
+        android:includeFontPadding="true"
+        android:text="New"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <TextView
+        android:id="@+id/tv_shoe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_shoe_show_one"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_xxlarge"
+        android:fontFamily="sans-serif-thin"
+        android:includeFontPadding="true"
+        android:text="Pointed Flat Mules"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x" />
+    <!--show for image two -->
+    <ImageView
+        android:id="@+id/iv_shoe_show_two"
+        android:layout_width="157dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/shoe"
+        />
+
+    <Button
+        android:id="@+id/btn_new_item1"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@id/iv_shoe_show_two"
+        android:layout_alignTop="@id/iv_shoe_show_two"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/white"
+        android:clickable="false"
+        android:fontFamily="sans-serif-thin"
+        android:includeFontPadding="true"
+        android:text="New"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <TextView
+        android:id="@+id/tv_shoe_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_shoe_show_two"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_xxlarge"
+        android:fontFamily="sans-serif-thin"
+        android:includeFontPadding="true"
+        android:text="Pointed Flat Mules"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x" />
+
+
+
+</RelativeLayout>
